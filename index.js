@@ -19,10 +19,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Toggle the "hidden" class on key-icons cards
-    if (filter === 'key-icons') {
+    if (filter === 'key-icons' && filter === 'running-shoes') {
       const keyIconsCards = document.querySelectorAll('.card.key-icons');
+      const runningShoesCards = document.querySelectorAll(
+        '.card.running-shoes'
+      );
       keyIconsCards.forEach((card) => {
         card.classList.toggle('hidden', filter !== 'key-icons');
+      });
+      runningShoesCards.forEach((card) => {
+        card.classList.toggle('hidden', filter !== 'running-shoes');
       });
     }
   }

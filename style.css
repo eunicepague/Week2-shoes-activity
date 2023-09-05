@@ -50,8 +50,14 @@
 .image-selection .card img {
   max-width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
+.image-selection p,
+h4 {
+  margin: 0;
+  padding-top: 1rem;
+}
 .hidden {
   display: none;
 }
