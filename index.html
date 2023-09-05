@@ -1,34 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <span>MY LOGO</span>
-      <nav>
-        <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">CONTACT</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <section class="landing-pg">
-      <div class="container">
-        <img src="./img/landing.jpeg" />
-        <h6>Nike air zoom superrep</h6>
-        <button type="button" class="btn-landing">
-          <span>Buy now</span>
-        </button>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--start of navbar-->
+  <nav class="navbar">
+    <div class="brand-title">Brand Name</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--end of navbar-->
+
+  <!--start of hero section-->
+  <section id="hero">
+    <div class="container">
+      <div class="info">
+        <h1>This is a title</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem vero ratione vitae dicta explicabo
+          perferendis amet quis provident molestiae magni!</p>
+        <a href="#">Click Me</a>
       </div>
-    </section>
+    </div>
+  </section>
+  <!--end of hero section-->
 
-    <box-icon name="menu" id="menu"></box-icon>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="index.js"></script>
-  </body>
+  <!--start of contact section-->
+  <div class="wrapper">
+    <h2>Contact us</h2>
+    <div id="error_message">
+
+    </div>
+    <form action="" id="myform" onsubmit="return validate();">
+      <div class="input_field">
+        <input type="text" placeholder="Name" id="name">
+      </div>
+      <div class="input_field">
+        <input type="text" placeholder="Subject" id="subject">
+      </div>
+      <div class="input_field">
+        <input type="text" placeholder="Phone" id="phone">
+      </div>
+      <div class="input_field">
+        <input type="text" placeholder="Email" id="email">
+      </div>
+      <div class="input_field">
+        <textarea placeholder="Message" id="message"></textarea>
+      </div>
+      <div class="btn">
+        <input type="submit">
+      </div>
+    </form>
+  </div>
+  <!--end of contact section-->
+
+  <!--footer-->
+  <script src="index.js"></script>
+</body>
+
 </html>
