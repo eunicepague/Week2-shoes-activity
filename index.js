@@ -11,6 +11,7 @@ const navbarLinks =
 toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
 });
+//for filter items
 document.addEventListener(
   "DOMContentLoaded",
   function () {
